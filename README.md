@@ -22,8 +22,9 @@ There are only 3 methods : put, get and remove.
 2) YQL caching table (https://developer.yahoo.com/yql/console/#h=desc+yahoo.caching)
 
 ## Usage
+<?php
 $cache = new \YQLService\cache();
-
 if ($cache->put('superbird','super bird value','3600')) echo $cache->get('superbird');
 
-To remove an entry, just wait for it to expire or do $cache->remove('thekey');
+// To remove an entry, just wait for it to expire or do $cache->remove('thekey');
+?>
